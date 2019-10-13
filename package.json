@@ -7,8 +7,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "start": "concurrently  \"ng serve\" \"nodemon ./server/app.js\"",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
