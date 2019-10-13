@@ -1,0 +1,36 @@
+<div class="boody">
+  <div class="novakk" *ngIf="!loading">
+    <table class="table table-hover table-striped ndemo">
+      <thead>
+        <tr class="header thead-dark">
+          <th scope="col">BlockNumber</th>
+          <th scope="col">BlockHash</th>
+          <th scope="col">GasPrice</th>
+          <th scope="col">Hash</th>
+          <th scope="col">transactionIndex</th>
+        </tr>
+      </thead>
+
+      <tbody *ngFor="let block of transactions" class="">
+        <tr>
+          <td>
+            {{ block.blockNumber }}
+          </td>
+          <td>
+            {{ block.blockHash }}
+          </td>
+          <td>
+            {{ block.gasPrice }}
+          </td>
+          <td>
+            {{ block.hash }}
+          </td>
+          <td>
+            {{ block.transactionIndex }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<ngx-spinner></ngx-spinner>

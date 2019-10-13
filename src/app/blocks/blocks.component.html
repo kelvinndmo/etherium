@@ -1,0 +1,38 @@
+<div class="boody">
+  <div class="novakk" *ngIf="!loading">
+    <table class="table table-hover table-striped ndemo">
+      <thead>
+        <tr class="header thead-dark">
+          <th scope="col">Miner</th>
+          <th scope="col">Difficulty</th>
+          <th scope="col">hash</th>
+          <th scope="col">timestamp</th>
+          <th scope="col">Transacations</th>
+        </tr>
+      </thead>
+
+      <tbody *ngFor="let block of blocks" class="">
+        <tr>
+          <td>
+            <a [routerLink]="['/block', block.hash]" class="">{{
+              block.miner
+            }}</a>
+          </td>
+          <td>
+            {{ block.difficulty }}
+          </td>
+          <td>
+            <a href="" class="">{{ block.hash }}</a>
+          </td>
+          <td>
+            {{ block.timestamp }}
+          </td>
+          <td>
+            <a href="" class="">{{ block.transactions.length }}</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<ngx-spinner></ngx-spinner>

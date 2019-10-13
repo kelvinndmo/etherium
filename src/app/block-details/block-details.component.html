@@ -1,0 +1,58 @@
+<div class="booody">
+  <div class="row">
+    <div class="col-1-of-2">
+      <div class="card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--1">&nbsp;</div>
+          <h4 class="card__heading">
+            <span class="card__heading-span card__heading-span--1"
+              >Block Number : {{ block.number }}</span
+            >
+          </h4>
+
+          <div class="card__details">
+            <div class="boody" *ngIf="block !== null">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Number</th>
+                    <td>{{ block.number }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">miner</th>
+                    <td>{{ block.miner }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Hash</th>
+                    <td>{{ block.hash }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Difficulty</th>
+                    <td>{{ block.difficulty }}</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">TimeStamp</th>
+                    <td>{{ block.timestamp }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gas Used</th>
+                    <td>{{ block.gasUsed }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gas Limit</th>
+                    <td>{{ block.gasLimit }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Transactions</th>
+                    <td>{{ block.transactions.length }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
