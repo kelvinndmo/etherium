@@ -4,9 +4,9 @@ const rpcURL = 'https://mainnet.infura.io/v3/938a148413fe4ac681dd510bba40d2f5';
 
 const web3 = new Web3(rpcURL);
 const express = require('express');
-var cors = require('cors');
+
 const app = express();
-app.use(cors());
+
 const port = process.env.PORT || 3000;
 
 const account = '0x90e63c3d53E0Ea496845b7a03ec7548B70014A91';
