@@ -8,14 +8,16 @@
     "test": "ng test",
     "lint": "ng lint",
     "start": "concurrently  \"ng serve\" \"nodemon ./server/app.js\"",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.1.1",
     "@angular-devkit/build-angular": "^0.12.4",
     "@angular/cdk": "~8.2.3",
-    "@angular/cli": "7.3.9",
+    "@angular/cli": "~8.1.3",
+    "@angular/compiler-cli": "~8.1.1",
     "@angular/common": "~8.1.1",
     "@angular/compiler": "~8.1.1",
     "@angular/core": "~8.1.1",
@@ -39,8 +41,6 @@
     "typescript": "~3.4.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.12.4",
-    "@angular/cli": "~8.1.1",
     "@angular/compiler-cli": "~8.1.1",
     "@angular/language-service": "~8.1.1",
     "@types/jasmine": "~3.3.8",
