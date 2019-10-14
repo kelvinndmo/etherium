@@ -22,13 +22,17 @@
             {{ block.difficulty }}
           </td>
           <td>
-            <a href="" class="">{{ block.hash }}</a>
+            <a [routerLink]="['/block', block.hash]" class="">{{
+              block.hash
+            }}</a>
           </td>
           <td>
             {{ block.timestamp }}
           </td>
           <td>
-            <a href="" class="">{{ block.transactions.length }}</a>
+            <a [routerLink]="['/transactions']" class="">{{
+              block.transactions.length
+            }}</a>
           </td>
         </tr>
       </tbody>
